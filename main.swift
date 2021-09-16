@@ -131,3 +131,105 @@
 
 
 // p.83
+
+
+// let hello: String = "Hello"
+// let yagom: String = "yagom"
+// var greeting: String = hello + " " + yagom + "!"
+// print(greeting)
+
+// greeting = hello
+// greeting += " "
+// greeting += yagom
+// greeting += "!"
+// print(greeting)
+
+// var isSameString: Bool = false
+// isSameString = hello == "Hello"
+// print(isSameString)
+
+// isSameString = hello == "hello"
+// print(isSameString)
+
+// isSameString = yagom == "yagom"
+// print(isSameString)
+
+// isSameString = yagom == hello
+// print(isSameString)
+
+// var hasPrefix: Bool = false
+// hasPrefix = hello.hasPrefix("He")
+// print(hasPrefix)
+
+// hasPrefix = hello.hasPrefix("HE")
+// print(hasPrefix)
+
+// var hasSuffix: Bool = false
+// hasSuffix = hello.hasSuffix("He")
+// print(hasSuffix)
+
+// hasSuffix = hello.hasSuffix("llo")
+// print(hasSuffix)
+
+// var convertedString: String = ""
+// convertedString = hello.uppercased()
+// print(convertedString)
+
+// convertedString = hello.lowercased()
+// print(convertedString)
+
+// convertedString = yagom.uppercased()
+// print(convertedString)
+
+// convertedString = greeting.uppercased()
+// print(convertedString)
+
+// convertedString = greeting.lowercased()
+// print(convertedString)
+
+// var isEmptyString: Bool = false
+// isEmptyString = greeting.isEmpty
+// print(isEmptyString)
+
+// greeting = "안녕"
+// isEmptyString = greeting.isEmpty
+// print(isEmptyString)
+
+// greeting = ""
+// isEmptyString = greeting.isEmpty
+// print(isEmptyString)
+
+// print(greeting.count)
+
+// greeting = "안녕하세요"
+// print(greeting.count)
+
+// greeting = "안녕!"
+// print(greeting.count)
+
+// greeting = """
+// 안녕하세요 저는 야곰입니다.
+// 스위프트 잘 하고 싶어요!
+// 잘 부탁합니다!
+// """
+
+// print(greeting)
+
+// var someVar: Any = "yagom"
+// someVar = 50
+// someVar = 100.1
+
+
+typealias MyInt = Int
+typealias YourInt = Int
+typealias MyDouble = Double
+
+let age: MyInt = 100
+var year: YourInt = 2080
+
+year = age;
+
+let month: Int = 7
+let percentage: MyDouble = 99.9
+
+// p.91
