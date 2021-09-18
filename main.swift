@@ -220,16 +220,25 @@
 // someVar = 100.1
 
 
-typealias MyInt = Int
-typealias YourInt = Int
-typealias MyDouble = Double
+// typealias MyInt = Int
+// typealias YourInt = Int
+// typealias MyDouble = Double
 
-let age: MyInt = 100
-var year: YourInt = 2080
+// let age: MyInt = 100
+// var year: YourInt = 2080
 
-year = age;
+// year = age;
 
-let month: Int = 7
-let percentage: MyDouble = 99.9
+// let month: Int = 7
+// let percentage: MyDouble = 99.9
 
 // p.91
+
+
+var person: (String, Int, Double) = ("yagom", 100, 182.5)
+
+print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
+person.1 = 99
+person.2 = 178.5
+
+print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
