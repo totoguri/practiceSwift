@@ -235,10 +235,73 @@
 // p.91
 
 
-var person: (String, Int, Double) = ("yagom", 100, 182.5)
+// var person: (String, Int, Double) = ("yagom", 100, 182.5)
 
-print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
-person.1 = 99
-person.2 = 178.5
+// print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
+// person.1 = 99
+// person.2 = 178.5
 
-print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
+// print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
+
+
+// var person: (name: String, age: Int, height: Double) = ("yagom", 100, 182.5)
+// print("이름: \(person.name), 나이: \(person.age), 신장: \(person.height)")
+
+// person.age = 99
+// person.2 = 178.5
+
+// print("이름: \(person.0), 나이: \(person.1), 신장: \(person.2)")
+
+
+// typealias PersonTuple = (name: String, age: Int, height: Double)
+
+// let yagom: PersonTuple = ("yagom", 100, 178.5)
+// let eric: PersonTuple = ("Eric", 150, 183.5)
+
+// print("이름: \(yagom.name), 나이: \(yagom.age), 신장: \(yagom.height)")
+// print("이름: \(eric.name), 나이: \(eric.age), 신장: \(eric.height)")
+
+
+// var names: Array<String> = ["yagom", "chulsoo", "younghee", "yagom"]
+
+// var emptyArray: [Any] = [Any]()
+
+// print(emptyArray.isEmpty)
+// print(names.count)
+
+// print(names[2])
+// names[2] = "jenny"
+// print(names[2])
+
+// names.append("elsa")
+// names.append(contentsOf: ["john", "max"])
+// names.insert("happy", at: 2)
+// names.insert(contentsOf: ["jinhee", "minsoo"], at: 5)
+
+// print(names[4])
+// print(names.firstIndex(of: "yagom"))
+// print(names.firstIndex(of: "christal"))
+// print(names.first)
+// print(names.last)
+
+// let firstItem: String = names.removeFirst()
+// let lastItem: String = names.removeLast()
+// let indexZeroItem: String = names.remove(at: 0)
+
+// print(firstItem)
+// print(lastItem)
+// print(indexZeroItem)
+// print(names[1...3])
+
+
+typealias StringIntDictionary = [String: Int]
+var number1ForName: Dictionary<String, Int> = Dictionary<String, Int>()
+var number2ForName: [String: Int] = [String: Int]()
+var number3ForName: StringIntDictionary = StringIntDictionary()
+var number4ForName: [String: Int] = [:]
+var number5ForName: [String: Int] = ["yagom" : 100, "chulsoo" : 200, "jenny" : 300]
+
+print(number5ForName.isEmpty)
+print(number5ForName.count)
+
+// p.97
