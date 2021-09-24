@@ -294,14 +294,30 @@
 // print(names[1...3])
 
 
-typealias StringIntDictionary = [String: Int]
-var number1ForName: Dictionary<String, Int> = Dictionary<String, Int>()
-var number2ForName: [String: Int] = [String: Int]()
-var number3ForName: StringIntDictionary = StringIntDictionary()
-var number4ForName: [String: Int] = [:]
-var number5ForName: [String: Int] = ["yagom" : 100, "chulsoo" : 200, "jenny" : 300]
+// typealias StringIntDictionary = [String: Int]
+// var number1ForName: Dictionary<String, Int> = Dictionary<String, Int>()
+// var number2ForName: [String: Int] = [String: Int]()
+// var number3ForName: StringIntDictionary = StringIntDictionary()
+// var number4ForName: [String: Int] = [:]
+// var number5ForName: [String: Int] = ["yagom" : 100, "chulsoo" : 200, "jenny" : 300]
 
-print(number5ForName.isEmpty)
-print(number5ForName.count)
+// print(number5ForName.isEmpty)
+// print(number5ForName.count)
 
-// p.97
+
+// print(numberForName["chulsoo"]!)
+// print(numberForName["minji"])
+
+
+var names: Set<String> = ["yagom", "chulsoo", "younghee", "yagom"]
+var numbers = [100, 200, 300]
+print(type(of: numbers))
+print(names.isEmpty)
+print(names.count)
+
+names.insert("jenny")
+print(names.count)
+print(names.remove("chulsoo"))
+print(names.remove("john"))
+
+// p.100
