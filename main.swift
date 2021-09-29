@@ -321,17 +321,27 @@
 // print(names.remove("john"))
 
 
-let englishClassStudents: Set<String> = ["john", "chulsoo", "yagom"]
-let koreanClassStudents: Set<String> = ["jenny", "yagom", "chulsoo", "hana", "minsoo"]
+// let englishClassStudents: Set<String> = ["john", "chulsoo", "yagom"]
+// let koreanClassStudents: Set<String> = ["jenny", "yagom", "chulsoo", "hana", "minsoo"]
 
-let intersectSet: Set<String> = englishClassStudents.intersection(koreanClassStudents)
-print(intersectSet)
-let symmetricDiffSet: Set<String> = englishClassStudents.symmetricDifference(koreanClassStudents);
-print(symmetricDiffSet)
-let unionSet: Set<String> = englishClassStudents.union(koreanClassStudents)
-print(unionSet)
-let subtracSet: Set<String> = englishClassStudents.subtracting(koreanClassStudents)
-print(subtracSet)
-print(unionSet.sorted())
+// let intersectSet: Set<String> = englishClassStudents.intersection(koreanClassStudents)
+// print(intersectSet)
+// let symmetricDiffSet: Set<String> = englishClassStudents.symmetricDifference(koreanClassStudents);
+// print(symmetricDiffSet)
+// let unionSet: Set<String> = englishClassStudents.union(koreanClassStudents)
+// print(unionSet)
+// let subtracSet: Set<String> = englishClassStudents.subtracting(koreanClassStudents)
+// print(subtracSet)
+// print(unionSet.sorted())
 
 // p.100
+
+
+let bird: Set<String> = ["Pigeon", "Chicken", "Eagle"]
+let jungle: Set<String> = ["Lion", "Tiger", "Bear"]
+let animal: Set<String> = bird.union(jungle)
+
+print(bird.isDisjoint(with: jungle))
+print(bird.isSubset(of: animal))
+print(animal.isSuperset(of: jungle))
+print(animal.isSuperset(of: bird))
