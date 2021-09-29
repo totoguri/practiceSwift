@@ -337,11 +337,106 @@
 // p.100
 
 
-let bird: Set<String> = ["Pigeon", "Chicken", "Eagle"]
-let jungle: Set<String> = ["Lion", "Tiger", "Bear"]
-let animal: Set<String> = bird.union(jungle)
+// let bird: Set<String> = ["Pigeon", "Chicken", "Eagle"]
+// let jungle: Set<String> = ["Lion", "Tiger", "Bear"]
+// let animal: Set<String> = bird.union(jungle)
 
-print(bird.isDisjoint(with: jungle))
-print(bird.isSubset(of: animal))
-print(animal.isSuperset(of: jungle))
-print(animal.isSuperset(of: bird))
+// print(bird.isDisjoint(with: jungle))
+// print(bird.isSubset(of: animal))
+// print(animal.isSuperset(of: jungle))
+// print(animal.isSuperset(of: bird))
+
+// enum School {
+//   case primary
+//   case elementary
+//   case middle
+//   case high
+//   case college
+//   case university
+//   case graduate
+// }
+
+// enum School2 {
+//   case primary, elementary, middle, high, college, university, graduate
+// }
+
+// var highestEducationLevel: School = School.university
+// var highestEducationLevel2: School2 = .university
+// highestEducationLevel = .graduate
+
+
+// enum School: String {
+//   case primary = "primary"
+//   case elementary = "elementary"
+//   case middle = "middle"
+//   case high = "high"
+//   case college = "college"
+//   case university = "university"
+//   case graduate = "graduate"
+// }
+
+// let highestEducationLevel: School = School.university
+// print("저의 최종학력은 \(highestEducationLevel.rawValue) 졸업입니다.")
+
+// enum WeekDays: Character {
+//   case mon = "M", tue = "T", wed = "W", thu = "t", fri = "F", sat = "S", sun = "s"
+// }
+
+// let today: WeekDays = WeekDays.fri
+// print("오늘은 \(today.rawValue)요일입니다.")
+
+
+// enum Numbers: Int {
+//   case zero
+//   case one
+//   case two
+//   case ten = 10
+// }
+
+// print("\(Numbers.zero.rawValue), \(Numbers.one.rawValue), \(Numbers.two.rawValue), \(Numbers.ten.rawValue)")
+
+// enum School: String {
+//   case primary, graduate
+// }
+// let primary = School(rawValue: "유치원")
+// let graduate = School(rawValue: "석박사")
+// print("\(School.primary.rawValue)")
+// print("\(School.graduate.rawValue)")
+
+// let one = Numbers(rawValue: 1)
+// let three = Numbers(rawValue: 3)
+
+
+// enum MainDish {
+//   case pasta(taste: String)
+//   case pizza(dough: String, topping: String)
+//   case chicken(withSauce: Bool)
+//   case rice
+// }
+
+// var dinner: MainDish = MainDish.pasta(taste: "Cream")
+// dinner = .pizza(dough: "Cheese", topping: "Bulgogi")
+// dinner = .chicken(withSauce: true)
+// dinner = .rice
+
+
+enum PastaTaste {
+  case cream, tomato
+}
+enum PizzaDough {
+  case cheeseCrust, thin, original
+}
+enum PizzaTopping {
+  case pepperoni, cheese, bacon
+}
+enum MainDish {
+  case pasta(taste: PastaTaste)
+  case pizza(dough: PizzaDough, topping: PizzaTopping)
+  case chicken(withSauce: Bool)
+  case rice
+}
+
+var dinner: MainDish = MainDish.pasta(taste: PastaTaste.tomato)
+dinner = MainDish.pizza(dough: PizzaDough.cheeseCrust, topping: PizzaTopping.bacon)
+
+// p.108
